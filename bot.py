@@ -9,7 +9,7 @@ TELEGRAM_TOKEN  = os.environ["TELEGRAM_TOKEN"]
 BYBIT_API_KEY   = os.environ["BYBIT_API_KEY"]
 BYBIT_API_SECRET = os.environ["BYBIT_API_SECRET"]
 ALLOWED_USER_ID = int(os.environ["ALLOWED_USER_ID"])
-TESTNET         = os.environ.get("BYBIT_TESTNET", "true").lower() == "true"
+TESTNET         = os.environ.get("TESTNET", "true") == "False"
 
 # ─── Logging ─────────────────────────────────────────────────────────────────
 logging.basicConfig(

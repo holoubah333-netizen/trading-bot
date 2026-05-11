@@ -10,11 +10,13 @@ from pybit.unified_trading import HTTP
 
 # ============================================================
 
-TELEGRAM_TOKEN = “TON_TOKEN_TELEGRAM”
-BYBIT_API_KEY = “TA_BYBIT_API_KEY”
-BYBIT_API_SECRET = “TON_BYBIT_SECRET”
-ALLOWED_USER_ID = 123456789  # Ton Telegram User ID (sécurité)
-TESTNET = True  # Mets False pour le vrai trading !
+import os
+TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
+BYBIT_API_KEY = os.environ["BYBIT_API_KEY"]
+BYBIT_API_SECRET = os.environ["BYBIT_API_SECRET"]
+ALLOWED_USER_ID = int(os.environ["ALLOWED_USER_ID"])
+TESTNET = True
+  # Mets False pour le vrai trading !
 
 # ============================================================
 
